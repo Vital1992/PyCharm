@@ -23,8 +23,6 @@ class loginModule():
 
         driver.find_element_by_xpath(pom.loginBtn2).click()
 
-        sleep(2)
-
         account_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, pom.userIcon)))
         account_btn.click()
 
