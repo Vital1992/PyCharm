@@ -10,11 +10,6 @@ class registerModule():
     def __init__(self, driver):
         self.driver = driver
 
-    def setUp(self):
-        driver = self.driver = pom.driver
-        driver.maximize_window()
-        driver.get("https://www.toyotanation.com/forums/")
-
     def test_create_account(self, usernameInput, emailInput, passwordInput):
         driver = self.driver
         login_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, pom.loginBtn)))

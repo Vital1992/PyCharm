@@ -28,7 +28,7 @@ class CreateAccount(unittest.TestCase):
     def test_registration(self):
         driver = self.driver
         registration = registartionFunction.registerModule(driver)
-        registration.test_create_account("QATester1", "qagrabtester3@gmail.com", "Qa123456789!")
+        registration.test_create_account("QATester3", "qagrabtester3@gmail.com", "Qa123456789!")
 
     def tearDown(self):
         self.driver.quit()
